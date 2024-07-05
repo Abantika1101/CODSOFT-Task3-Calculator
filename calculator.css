@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.calculator:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.8);
+}
+
+.display {
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: right;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 1.5em;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.7);
+}
+
+.button:active {
+    background: #ccc;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+
+.operator {
+    background: linear-gradient(145deg, #f0a500, #ffd600);
+    color: white;
+}
+
+#equals {
+    background: linear-gradient(145deg, #28a745, #34d058);
+    color: white;
+}
+
+#clear {
+    background: linear-gradient(145deg, #dc3545, #ff4f5e);
+    color: white;
+}
+
+#undo {
+    background: linear-gradient(145deg, #007bff, #3399ff);
+    color: white;
+}
+
+#redo {
+    background: linear-gradient(145deg, #6c757d, #888c90);
+    color: white;
+}
+
+#delete {
+    background: linear-gradient(145deg, #ffc107, #ffca28);
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.5);
+}
